@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.chat-container {
+    max-width: 800px;
+    margin: 2em auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.chat-box {
+    padding: 1em;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.chat-container .form{
+    padding: 20px 15px;
+    min-height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.chat-container .form .inbox{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+.chat-container .form .user-inbox{
+    justify-content: flex-end;
+    margin: 13px 0;
+}
+.chat-container .form .inbox .icon{
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    background: #ccefff;
+}
+.chat-container .form .inbox .msg-header{
+    max-width: 53%;
+    margin-left: 10px;
+}
+.form .inbox .msg-header p{
+    color: #4c4c4c;
+    background: #ccefff;
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
+    word-break: break-all;
+}
+/*************.chat-container .typing-field{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #efefef;
+    border-top: 1px solid #d9d9d9;
+    border-radius: 0 0 5px 5px;
+}
+*/
+.chat-container .typing-field .input-data{
+    height: 40px;
+    /*width: 335px;
+    position: relative;*/
+    width: 80%;
+    position: relative;
+    display: inline-block;
+}
+/*.chat-container .typing-field .input-data input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0 80px 0 15px;
+    border-radius: 3px;
+    font-size: 15px;
+    background: #fff;
+    transition: all 0.3s ease;
+}*/
+.chat-container .typing-field .input-data input {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 15px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+.typing-field .input-data input:focus{
+    border-color: rgba(0,123,255,0.8);
+}
+
+.input-data input::placeholder{
+    color: #999999;
+    transition: all 0.3s ease;
+}
+.input-data input:focus::placeholder{
+    color: #bfbfbf;
+}
+/*.send-btn{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    height: 30px;
+    width: 65px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    background: #fd7d1c;
+    border: 1px solid #fd7d1c;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+*/
+
+.send-btn{
+    opacity: 1;
+    pointer-events: auto;
+}
+.send-btn:hover{
+    background: #007BFF;
+}
+
+
+
+.chat-container .typing-field .send-btn {
+    height: 40px;
+    width: 10%;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #007BFF;
+    border: 1px solid #007BFF;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    
+}
+
+.chat-container .typing-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #efefef;
+    border-top: 1px solid #d9d9d9;
+    border-radius: 0 0 5px 5px;
+    padding: 0 10px;
+    height: 60px;
+    
+}
+
+
+.logo{
+    padding: 1.5rem 0 1.5rem 0;
+    margin: 0;
+    width: 5rem;
+}
+
+.chatbotFace{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
